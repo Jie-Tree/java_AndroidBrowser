@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Browser</string>
+    <string name="tabBarItem">TabBar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_bookmark_add">收藏网址</string>
+    <string name="menu_bookmark_open">收藏夹</string>
+    <string name="menu_day">白天</string>
+    <string name="computer">电脑模式</string>
+    <string name="menu_exit">退出</string>
+    <string name="menu_history">历史记录</string>
+    <string name="menu_image">图片</string>
+    <string name="menu_night">夜间</string>
+    <string name="menu_nocache">无痕浏览</string>
+    <string name="menu_settings">设为主页</string>
+    <string name="menu_share">分享</string>
+    <string name="download">下载列表</string>
+    <string name="slide_right_txtUrl_hint">请输入网址</string>
+    <string name="slide_right_baidu">百度</string>
+    <string name="slide_right_cancel">取消</string>
+    <string name="slide_right_go">前往</string>
+    <string name="slide_right_go_search">搜索</string>
+    <string name="slide_right_keywords">请输入搜索词</string>
+    <string name="slide_right_search">百度</string>
+</resources>

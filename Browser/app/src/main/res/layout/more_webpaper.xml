@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:id="@+id/morepaper_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/index_bottom_bar"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            android:id="@+id/morepaper_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/morepaper_add"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:src="@mipmap/morepaper_add" />
+    </LinearLayout>
+</LinearLayout>

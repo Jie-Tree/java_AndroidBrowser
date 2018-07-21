@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/title_lay_index"
+    android:background="@drawable/top_title_back"
+    android:visibility="visible"
+    android:layout_width="fill_parent"
+    android:layout_height="36dip"
+    android:layout_marginLeft="11.0dip"
+    android:layout_marginRight="11.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/title_top_earth"
+        android:layout_width="17.0dip"
+        android:layout_height="17.0dip"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="7.0dip"
+        android:src="@mipmap/wangluo"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:id="@+id/title_top_line"
+        android:background="#ffafafaf"
+        android:layout_width="1.0px"
+        android:layout_height="20.0dip"
+        android:layout_toRightOf="@id/title_top_earth"
+        android:layout_centerVertical="true" />
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0.0px"
+        android:layout_height="0.0px" />
+    <EditText
+        android:textSize="13.0dip"
+        android:textColor="#ffaaaaaa"
+        android:id="@+id/index_edit"
+        android:background="#ffececec"
+        android:paddingLeft="10.0dip"
+        android:focusable="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="1.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginBottom="1.0dip"
+        android:hint="@string/slide_right_txtUrl_hint"
+        android:singleLine="true"
+        android:inputType="none"
+        android:layout_toRightOf="@id/title_top_line" />
+    <ImageView
+        android:id="@+id/index_cancel"
+        android:visibility="visible"
+        android:layout_width="20.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="6.0dip"
+        android:src="@mipmap/refresh"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true" />
+    <ImageView
+        android:id="@+id/index_refresh"
+        android:visibility="gone"
+        android:layout_width="20.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="6.0dip"
+        android:src="@mipmap/ic_refresh"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

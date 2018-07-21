@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--底部菜单栏-->
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_above="@+id/index_bottom_bar"
+android:gravity="center_vertical"
+android:orientation="vertical"
+android:visibility="gone"
+android:id="@+id/bottom_dialog"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+    >
+
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:alpha="1.0">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="90.0dip"
+        android:layout_weight="1.0">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/popup_night"
+            android:background="@drawable/popupwindow_selector"
+            android:paddingTop="0.0dip"
+            android:paddingBottom="0.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/img_night"
+                android:layout_width="@dimen/menu_img_size"
+                android:layout_height="@dimen/menu_img_size"
+                android:src="@mipmap/ic_night"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_night_open"
+                android:layout_width="@dimen/menu_img_size"
+                android:layout_height="@dimen/menu_img_size"
+                android:src="@mipmap/ic_night_open"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/popupwindow_item_text"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="@string/menu_night"
+                android:layout_below="@id/img_night"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="90.0dip"
+        android:layout_weight="1.0">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/popup_computer"
+            android:background="@drawable/popupwindow_selector"
+            android:paddingTop="0.0dip"
+            android:paddingBottom="0.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/img_computer"
+                android:layout_width="@dimen/menu_img_size"
+                android:layout_height="@dimen/menu_img_size"
+                android:src="@mipmap/ic_computer"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+                android:id="@+id/img_computer_open"
+                android:visibility="gone"
+                android:layout_width="@dimen/menu_img_size"
+                android:layout_height="@dimen/menu_img_size"
+                android:src="@mipmap/ic_computer_open"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/popupwindow_item_text"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="@string/computer"
+                android:layout_below="@id/img_computer"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <!--</FrameLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="90.0dip"
+        android:layout_weight="1.0">
+
+
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/popup_no_cache"
+            android:background="@drawable/popupwindow_selector"
+            android:paddingTop="0.0dip"
+            android:paddingBottom="0.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/img_no_chahe"
+                android:layout_width="@dimen/menu_img_size"
+                android:layout_height="@dimen/menu_img_size"
+                android:src="@mipmap/no_cache"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+                android:id="@+id/img_no_chahe_open"
+                android:visibility="gone"
+                android:layout_width="@dimen/menu_img_size"
+                android:layout_height="@dimen/menu_img_size"
+                android:src="@mipmap/no_cache_open"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/popupwindow_item_text"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="@string/menu_nocache"
+                android:layout_below="@id/img_no_chahe"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <!--</FrameLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="90.0dip"
+        android:layout_weight="1.0">
+
+
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/popup_share"
+            android:background="@drawable/popupwindow_selector"
+            android:paddingTop="0.0dip"
+            android:paddingBottom="0.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/img_share"
+                android:layout_width="@dimen/menu_img_size"
+                android:layout_height="@dimen/menu_img_size"
+                android:src="@mipmap/ic_share"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/popupwindow_item_text"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="@string/menu_share"
+                android:layout_below="@id/img_share"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/more_download_notice"
+            android:visibility="gone"
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginLeft="13.5dip"
+            android:layout_marginBottom="27.5dip"
+            android:src="@mipmap/recommend_red_notice"/>
+        <!--</FrameLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="90.0dip"
+        android:layout_weight="1.0">
+
+
+
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/popup_setting"
+            android:background="@drawable/popupwindow_selector"
+            android:paddingTop="0.0dip"
+            android:paddingBottom="0.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/img_setting"
+                android:layout_width="@dimen/menu_img_size"
+                android:layout_height="@dimen/menu_img_size"
+                android:src="@mipmap/ic_setting"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/popupwindow_item_text"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.0dip"
+                android:text="@string/menu_settings"
+                android:layout_below="@id/img_setting"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:alpha="1.0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="90.0dip"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/popup_history"
+                android:background="@drawable/popupwindow_selector"
+                android:paddingTop="0.0dip"
+                android:paddingBottom="0.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/img_history"
+                    android:layout_width="@dimen/menu_img_size"
+                    android:layout_height="@dimen/menu_img_size"
+                    android:src="@mipmap/ic_history"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:textSize="@dimen/menu_text_size"
+                    android:textColor="@color/popupwindow_item_text"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.0dip"
+                    android:text="@string/menu_history"
+                    android:layout_below="@id/img_history"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="90.0dip"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/popup_bookmark"
+                android:background="@drawable/popupwindow_selector"
+                android:paddingTop="0.0dip"
+                android:paddingBottom="0.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/img_open_bookmark"
+                    android:layout_width="@dimen/menu_img_size"
+                    android:layout_height="@dimen/menu_img_size"
+                    android:src="@mipmap/ic_bookmark"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:textSize="@dimen/menu_text_size"
+                    android:textColor="@color/popupwindow_item_text"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.0dip"
+                    android:text="@string/menu_bookmark_open"
+                    android:layout_below="@id/img_open_bookmark"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <!--</FrameLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="90.0dip"
+            android:layout_weight="1.0">
+
+
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/popup_add_bookmark"
+                android:background="@drawable/popupwindow_selector"
+                android:paddingTop="0.0dip"
+                android:paddingBottom="0.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/img_add_bookmark"
+                    android:layout_width="@dimen/menu_img_size"
+                    android:layout_height="@dimen/menu_img_size"
+                    android:src="@mipmap/ic_bookmark_add"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:textSize="@dimen/menu_text_size"
+                    android:textColor="@color/popupwindow_item_text"
+                    android:gravity="center"
+                    android:id="@+id/add_bookmark_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.0dip"
+                    android:text="@string/menu_bookmark_add"
+                    android:layout_below="@id/img_add_bookmark"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <!--</FrameLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="90.0dip"
+            android:layout_weight="1.0">
+
+
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/popup_download"
+                android:background="@drawable/popupwindow_selector"
+                android:paddingTop="0.0dip"
+                android:paddingBottom="0.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/img_download"
+                    android:layout_width="@dimen/menu_img_size"
+                    android:layout_height="@dimen/menu_img_size"
+                    android:src="@mipmap/ic_download"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:textSize="@dimen/menu_text_size"
+                    android:textColor="@color/popupwindow_item_text"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.0dip"
+                    android:text="@string/download"
+                    android:layout_below="@id/img_download"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/more_download_notice"
+                android:visibility="gone"
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:layout_marginLeft="13.5dip"
+                android:layout_marginBottom="27.5dip"
+                android:src="@mipmap/recommend_red_notice"/>
+            <!--</FrameLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="90.0dip"
+            android:layout_weight="1.0">
+
+
+
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/popup_exit"
+                android:background="@drawable/popupwindow_selector"
+                android:paddingTop="0.0dip"
+                android:paddingBottom="0.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/img_exit"
+                    android:layout_width="@dimen/menu_img_size"
+                    android:layout_height="@dimen/menu_img_size"
+                    android:src="@mipmap/ic_exit"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:textSize="@dimen/menu_text_size"
+                    android:textColor="@color/popupwindow_item_text"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.0dip"
+                    android:text="@string/menu_exit"
+                    android:layout_below="@id/img_exit"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

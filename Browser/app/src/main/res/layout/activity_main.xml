@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <include layout="@layout/index_view"/>
+    <include layout="@layout/search_view"/>
+    <include layout="@layout/setting_view"/>
+    <include layout="@layout/add_bookmark_view"/>
+    <include layout="@layout/bookmark_view"/>
+    <include layout="@layout/history_view"/>
+    <include layout="@layout/add_download_view"/>
+    <include layout="@layout/download_view"/>
+</RelativeLayout>

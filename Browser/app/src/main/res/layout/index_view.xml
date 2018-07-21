@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/index_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:visibility="visible"
+    android:layout_height="match_parent">
+    <include layout="@layout/index_title_bar"/>
+
+    <FrameLayout
+        android:layout_below="@+id/layout_index_title_bar"
+        android:layout_above="@+id/index_bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        >
+        <WebView
+            android:id="@+id/index_webView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           />
+        <View
+            android:id="@+id/index_background"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#5c000000"
+            />
+    </FrameLayout>
+    <include layout="@layout/include_bottom_more_menu"/>
+    <include layout="@layout/more_webpaper"/>
+    <include layout="@layout/index_bottom_bar"/>
+</RelativeLayout>
